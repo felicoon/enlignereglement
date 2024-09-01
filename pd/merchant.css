@@ -1,0 +1,320 @@
+/*fonts*/
+@font-face {
+    font-family: 'Orangesans45';
+    src: url('orangesans45-webfont.eot');
+    src: url('orangesans45-webfont.eot?#iefix') format('embedded-opentype'), url('orangesans45-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orangesans55';
+    src: url('orangesans55-webfont.eot');
+    src: url('orangesans55-webfont.eot?#iefix') format('embedded-opentype'), url('orangesans55-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset css meyer */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    color: #000;
+    font: 13px/17px Arial, Helvetica, sans-serif;
+    width: 740px;
+    margin: auto auto;
+    padding-bottom: 27px;
+    font-weight:bold;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+    float: left;
+    background: url("logo-orange.png") no-repeat scroll 0 0 transparent;
+    height: 53px;
+    width: 53px;
+    color: #666666;
+    margin-top: 22px;
+}
+
+#title {
+    color: #333333;
+    font: 34px Orangesans45;
+}
+
+ul#breadcrumb-command {
+    margin: 0 auto 17px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    height: 43px;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+ul#breadcrumb-command li {
+    background: url("bc-arrow.png") no-repeat scroll 0 0 transparent;
+    background-size: 267px 43px;
+    color: #333333;
+    float: left;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-weight: normal;
+    height: 42px;
+    line-height: 18px;
+    list-style-type: none;
+    margin-left: -26px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 267px;
+}
+
+ul#breadcrumb-command li.basket {
+    margin-left: 0;
+    z-index: 5;
+}
+
+ul#breadcrumb-command li.basket span {
+    color: #333333;
+    margin-left: -22px;
+}
+
+ul#breadcrumb-command li.payment {
+    z-index: 2;
+}
+
+ul#breadcrumb-command li.confirmation {
+    background: url("bc-arrow-last.png") repeat-x scroll 0 0 transparent;
+    background-size: auto 43px;
+    width: 255px;
+    z-index: 1;
+}
+
+ul#breadcrumb-command li.active {
+    background: url("bc-arrow-hover.png") no-repeat scroll 0 0 transparent;
+    background-size: 270px 43px;
+    width: 270px;
+    color: #FF6600;
+}
+
+#main {
+    background: url("lock_59x42_s.png") no-repeat scroll 0 0 transparent;
+    background-size: 42px 59px;
+    width: 750px;
+    margin: 18px auto 0;
+    clear: both;
+    position: relative;
+}
+
+#main h1 {
+    color: #333333;
+    font: 34px Orangesans45;
+    display: block;
+    padding: 1px 0 15px 54px;
+}
+
+.sub-title-page {
+    color: #666666;
+    display: block;
+    font: 12px Orangesans55;
+    line-height: 18px;
+    padding: 0 0 19px 55px;
+    margin-top: -15px;
+}
+
+.payment_container {
+    margin-top: -1px;
+}
+
+#payment_body.bg-box {
+    background: url("bg-box.png") repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    font-size: 13px;
+    padding: 11px 46px 50px 19px;
+}
+
+#payment_form.box h3 {
+    font-size: 21px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+#payment_form.box p.warning-star {
+    font-family: Arial, serif;
+    color: #333333;
+    line-height: 18px;
+    margin-bottom: 35px;
+    margin-top: -6px;
+}
+
+#payment_form .star {
+    font-weight: bold;
+}
+
+#payment_form label, #payment_form input, #form_card_type, #form_expiry_month, #form_expiry_year {
+    color: #333333;
+}
+
+div.button {
+    margin: 16px 0 0 0;
+}
+
+#payment_form .back-btn.payment {
+    background: url("chevron.png") no-repeat scroll 0 -17px transparent;
+    border: medium none;
+    color: #555555;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 17px;
+    position: relative;
+    text-decoration: none;
+    top: 16px;
+}
+
+#payment_form .back-btn.payment:hover {
+    background-position: 0 -99px;
+    color: #FF6600;
+    text-decoration: none;
+}
+
+#payment_form button.validate-btn {
+    background: url("btn-orange-no-arrow.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    left: -28px;
+    line-height: 20px;
+    padding: 14px 6px 16px 35px;
+    position: relative;
+}
+
+#payment_form button.validate-btn:hover {
+    background-position: 0 -50px;
+    text-decoration: none;
+}
+
+#payment_form button.validate-btn .end {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    right: -30px;
+    top: 0;
+    display: block;
+    background: url("btn-orange-no-arrow.png") no-repeat scroll right 0 transparent;
+}
+
+#payment_form button.validate-btn:hover .end {
+    background-position: right -50px;
+}
+
+#payment_form input, select#form_card_type, select#form_expiry_month, select#form_expiry_year {
+    padding: 1px;
+    position: relative;
+}
+
+input#form_card_number {
+    width: 137px;
+}
+
+select#form_expiry_month, select#form_expiry_year {
+    width: auto;
+}
+
+#payment_form .line {
+    height: 27px;
+    margin-bottom: 12px;
+}
+
+#form_js_error_container {
+    margin-top: -28px;
+}
+
+label, .divExpirationDate > p {
+    float: left;
+    display: inline-block;
+}
+
+.divExpirationDate {
+    margin-bottom: 3px;
+}
+
+label, p.libelle {
+    width: 150px;
+}
+
+p.infoSecurityCode {
+    color: #666666;
+    float: left;
+    margin-left: 9px;
+}
+
+.divSecurityCodeInfoBox {
+    margin-left: 130px;
+}
+
+#divAmount {
+    font-size: 21px;
+    height: 36px;
+    clear: right;
+}
+
+.wal_warning {
+    color: #FF0000;
+}
+
+.warning_message {
+    margin-left: 253px;
+}
+
+#footer {
+    clear: both;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+#footer .legal {
+    border: 1px solid #CCCCCC;
+    padding: 11px 22px 10px;
+}
+
+#footer .legal p {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: justify;
+}
+
